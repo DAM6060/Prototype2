@@ -19,7 +19,7 @@ namespace Assets.TutorialInfo.Scripts
 		//Right Spawn fields // Left with inverted values
 		private float spanwMidZ = 9.0f;
 		private float spanwRangeZRanger = 5.0f;
-		private float spawnPosX = 24.0f;
+		private float spawnPosX =24.0f;
 
 		
 

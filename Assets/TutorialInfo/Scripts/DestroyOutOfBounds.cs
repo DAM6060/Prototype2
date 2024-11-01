@@ -11,8 +11,8 @@ namespace Assets.TutorialInfo.Scripts
 	{
 		private float topBound = 30.0f;
 		private float lowerBound = -10.0f;
-		private float LeftBound = -12.0f;
-		private float RightBound = 12.0f;
+		private float LeftBound = -50.0f;
+		private float RightBound = 50.0f;
 		void Start()
 		{
 
