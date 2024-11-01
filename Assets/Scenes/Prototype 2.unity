@@ -474,12 +474,64 @@ Transform:
   m_GameObject: {fileID: 534669902}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 25, z: 7.5}
+  m_LocalPosition: {x: 0, y: 35, z: 5}
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &966920527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966920529}
+  - component: {fileID: 966920528}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &966920528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966920527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35c8f765b2b1c844a9f33fac6efef8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 4099011786392643563, guid: 341e0de470533464aab0713d4e03a7c4, type: 3}
+  - {fileID: 6327159279898241118, guid: 4167a18aa0b6b064b9881de0c9a544b5, type: 3}
+  - {fileID: 6693991039554380372, guid: 59c5d16042fa8384aa6dd349826ad400, type: 3}
+  enemyCount: 10
+  spawnRate: 1
+  startDelay: 1
+  waveNumber: 1
+--- !u!4 &966920529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966920527}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.656194, y: 1.0739155, z: 8.335803}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &974487349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -554,9 +606,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 974487350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b16d0526ea57a7a4aa1221995acad066, type: 3}
+  m_Script: {fileID: 11500000, guid: a87695a2294526947a451be43378b975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontalInput: 0
+  speed: 10
+  xBoundLeft: -10
+  xBoundRight: 10
+  projectilePrefab: {fileID: 3940229284693369436, guid: 505e2a5840084604e878fcf52397b3aa, type: 3}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,3 +742,4 @@ SceneRoots:
   - {fileID: 170076735}
   - {fileID: 992285706}
   - {fileID: 974487349}
+  - {fileID: 966920529}
