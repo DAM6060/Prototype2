@@ -35,6 +35,7 @@ public class SpawnManagerX : MonoBehaviour
 			// Generate a random interval between rangeMin and rangeMax
 			float randomInterval = Random.Range(rangeMin, rangeMax);
 			yield return new WaitForSeconds(randomInterval); // Wait for the random interval
+															
 		}
 	}
 
