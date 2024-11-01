@@ -11,6 +11,7 @@ namespace Assets.TutorialInfo.Scripts
 		private void Update()
 		{
 			transform.Translate(speed * Time.deltaTime * Vector3.forward);
+			
 		}
 	}
 }
